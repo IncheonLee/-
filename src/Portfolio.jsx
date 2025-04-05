@@ -1,9 +1,6 @@
 
-// Portfolio.jsx
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Portfolio() {
   return (
@@ -17,6 +14,7 @@ export default function Portfolio() {
           <a href="#contact" className="hover:text-blue-400">Contact</a>
         </nav>
       </header>
+
       <section className="flex flex-col items-center justify-center text-center h-screen px-4">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
@@ -30,6 +28,7 @@ export default function Portfolio() {
           새로운 기술을 익히는 데 흥미를 느끼며, 빠르게 변화하는 환경에서 능동적으로 적응할 수 있는 개발자입니다.
         </p>
       </section>
+
       <section id="about" className="py-20 px-6 max-w-5xl mx-auto">
         <h3 className="text-3xl font-semibold mb-4">About Me</h3>
         <p className="text-gray-300">
@@ -39,6 +38,7 @@ export default function Portfolio() {
           수어 번역 캡스톤 우수상, 부트캠프 프로젝트 데모데이 투표 1위 수상 경험.
         </p>
       </section>
+
       <section id="projects" className="py-20 px-6 bg-gray-900 max-w-5xl mx-auto">
         <h3 className="text-3xl font-semibold mb-8">Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -58,6 +58,7 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
       <section id="skills" className="py-20 px-6 max-w-5xl mx-auto">
         <h3 className="text-3xl font-semibold mb-6">Skills</h3>
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
@@ -71,22 +72,24 @@ export default function Portfolio() {
           <li className="bg-gray-800 p-4 rounded-lg">Notion</li>
         </ul>
       </section>
+
       <section id="contact" className="py-20 px-6 bg-gray-900 text-center">
         <h3 className="text-3xl font-semibold mb-4">Contact</h3>
         <p className="text-gray-400 mb-6">궁금한 점이 있다면 언제든 연락 주세요!</p>
         <div className="flex justify-center gap-6">
-          <a href="https://github.com/IncheonLee" target="_blank">
-            <Button variant="outline" className="gap-2">
+          <a href="https://github.com/IncheonLee" target="_blank" rel="noreferrer">
+            <button className="px-4 py-2 bg-white text-black rounded-md flex items-center gap-2">
               <Github className="w-5 h-5" /> GitHub
-            </Button>
+            </button>
           </a>
           <a href="mailto:cha14678@naver.com">
-            <Button variant="outline" className="gap-2">
+            <button className="px-4 py-2 bg-white text-black rounded-md flex items-center gap-2">
               <Mail className="w-5 h-5" /> Email
-            </Button>
+            </button>
           </a>
         </div>
       </section>
+
       <footer className="text-center py-6 text-gray-600 bg-gray-950 border-t border-gray-800">
         © 2025 이준석. All rights reserved.
       </footer>
